@@ -1,4 +1,9 @@
 #!/bin/sh
+if [ $# -lt 2 ]; then
+    echo "usage lib:dependency dir
+      src: source dir"
+    exit 0
+fi
 dir=`dirname $0`
 dir=`cd $dir;pwd`
 
